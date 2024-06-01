@@ -1,6 +1,0 @@
-// Using volatile keyword is not always enough to guarantee correct concurrent behavior
-
-public class Counter {
-
-}
-
