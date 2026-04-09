@@ -1,0 +1,18 @@
+package com.java.leetcode.string;
+
+public class DetectCapital {
+
+    public boolean detectCapitalUse(String word) {
+        int capitals = 0;
+
+        for (char c : word.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                capitals++;
+            }
+        }
+        // all uppercase OR all lowercase OR only first letter uppercase
+        return capitals == word.length()
+                || capitals == 0
+                || (capitals == 1 && Character.isUpperCase(word.charAt(0)));
+    }
+}
